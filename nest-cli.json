@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "nest-camunda-library": {
+      "type": "library",
+      "root": "libs/nest-camunda-library",
+      "entryFile": "index",
+      "sourceRoot": "libs/nest-camunda-library/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/nest-camunda-library/tsconfig.lib.json"
+      }
+    }
+  }
+}
